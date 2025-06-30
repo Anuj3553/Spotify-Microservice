@@ -15,10 +15,14 @@
   "type": "commonjs",
   "dependencies": {
     "@neondatabase/serverless": "^1.0.1",
+    "@types/cors": "^2.8.19",
     "@types/dotenv": "^6.1.1",
     "@types/express": "^5.0.3",
+    "@types/redis": "^4.0.10",
+    "cors": "^2.8.5",
     "dotenv": "^17.0.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "redis": "^5.5.6"
   },
   "devDependencies": {
     "concurrently": "^9.2.0",
