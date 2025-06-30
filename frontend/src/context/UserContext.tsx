@@ -112,7 +112,7 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
     try {
       const { data } = await axios.get(`${server}/api/v1/user/me`, {
         headers: {
-          token: localStorage.getItem("token"),
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       });
 
@@ -140,7 +140,7 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
         {},
         {
           headers: {
-            token: localStorage.getItem("token"),
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
         }
       );

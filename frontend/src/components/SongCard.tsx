@@ -18,6 +18,7 @@ const SongCard: React.FC<SongCardProps> = ({ image, name, desc, id }) => {
   const saveToPlayListHanlder = () => {
     addToPlaylist(id);
   };
+  
   return (
     <div className="min-w-[180px] p-2 px-3 rounded cursor-pointer hover:bg-[#ffffff26]">
       <div className="relative group">

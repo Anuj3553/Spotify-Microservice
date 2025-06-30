@@ -61,11 +61,14 @@ async function initDB() {
 
 const PORT = process.env.PORT || 7000;
 
+app.use(cors({
+  origin: "http://localhost:5173",
+}));
+
 app.use("/api/v1", AdminRoutes);
 
-app.use(express.json());
 
-app.use(cors());
+app.use(express.json());
 
 initDB().then(() => {
     app.listen(PORT, () => {
