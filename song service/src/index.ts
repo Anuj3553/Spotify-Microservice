@@ -22,7 +22,7 @@ redisClient.connect().then(() =>
 
 const app = express();
 
-const PORT = process.env.PORT || 7001;
+const PORT = process.env.PORT || 8000;
 
 app.use(express.json());
 

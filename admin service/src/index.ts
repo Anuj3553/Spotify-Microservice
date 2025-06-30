@@ -61,7 +61,7 @@ async function initDB() {
 
 const PORT = process.env.PORT || 7000;
 
-app.use("/api/v1/admin", AdminRoutes);
+app.use("/api/v1", AdminRoutes);
 
 app.use(express.json());
 
